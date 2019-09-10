@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+#container{
+    background-color:blue;
+    color: cyan;
+}
+#wrapper {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:cyan;
+}
+
+section{
+    display:grid;
+    grid-template-columns: repeat(3,10vmin);
+    
+}
+
+section.board {
+    display: grid;
+    grid-template-columns: repeat(3, 25vmin);
+    grid-template-rows: repeat(3, 25vmin);
+    
+}
+section.board div{
+    border: 20px solid cyan;
+    border-radius: 25%;
+}
+section.board div:hover{
+    cursor:pointer;
+}
+
+button {
+    border-radius: 5px;
+    height:50px;
+    width:50px;
+
+}
